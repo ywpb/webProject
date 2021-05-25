@@ -1,0 +1,82 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font: 14px/1.5 -apple-system, BlinkSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, Helevetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei, Source Han Sans CN, sans-serif;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+body .header {
+  width: 100vw;
+  height: 300px;
+  background-image: url("https://raw.sevencdn.com/xjh22222228/nav/image/sim-wallpaper.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .header .title {
+  text-align: center;
+  color: #fff;
+}
+body .header h1 {
+  line-height: 2;
+  font-size: 40px;
+}
+body .header h3 {
+  font-size: 15px;
+}
+body .header .parent {
+  width: 500px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  line-height: 1.5;
+  border: 1px solid transparent;
+}
+body .header .parent .condition {
+  width: 100px;
+  height: 100%;
+  background-color: #EFEFEF;
+  border-radius: 2px 0 0 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+body .header .parent .condition::after {
+  content: 'expand_more';
+  padding-left: 10px;
+}
+body .header .parent .searchs {
+  width: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+body .header .parent .searchs .search {
+  width: 300px;
+  height: 100%;
+  border: 1px solid #fff;
+  outline: none;
+  font-size: 18px;
+}
+body .header .parent .searchs .search-lcon {
+  width: 50px;
+  height: 100%;
+  background-color: #fff;
+  border-left: 1px solid #d9d9d9;
+  border-radius: 0 2px 2px 0;
+  text-align: center;
+  padding-top: 7px;
+  border: none;
+}
+body .header .parent .searchs:hover {
+  outline: 1px solid #9c88ff;
+}
