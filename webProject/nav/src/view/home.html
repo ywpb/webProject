@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../css/header.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet">
+    <script src="../js/moduls.js" type="module">
+            
+    </script>
 </head>
 <body>
 
@@ -16,7 +19,7 @@
         <h3 class="title">这里收录多达<span id='count'>1000</span>个优质网站，助您工作、学习和生活</h3>
 
         <form action="" class="parent">
-            <div id='type' title="test" class="condition material-icons">
+            <div class="type condition material-icons">
                 默认
             </div>
             <span class="searchs">
@@ -25,9 +28,32 @@
                 <span class="search-lcon material-icons">search</span>
             </span>
         </form>
- 
     </header>
 
 
+    <main class = 'domain'>
+        <div class="nav"></div>
+        <div class="wraaper">
+            <div class="sidebar"></div>
+            <aside class="site-box"></aside>
+        </div>
+    </main>
+    <div class="category">
+        <div title="默认" class="ant-select-item-option-selected">默认</div>
+        <div title="标签">标签</div>
+        <div title="描述">描述</div>
+        <div title="链接">链接</div>
+        <div title="当前">当前</div>
+    </div>
+
+    <template class='navTemp'>
+        <div>
+           
+        </div>
+    </template>
+    
+<script>
+    
+</script>
 </body>
 </html>

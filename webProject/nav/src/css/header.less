@@ -17,6 +17,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
         .title{
             text-align: center;
             color: #fff;
@@ -80,7 +81,115 @@ body{
             .searchs:hover{
                 outline: 1px solid #9c88ff;
             }
-
         }
+    }
+
+    .category{
+        display: none;
+        width: 100px;
+        background-color: #EFEFEF;
+        box-sizing: border-box;
+    }
+
+    .category>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+    .category>div:hover{
+        background-color: #fff;
+    }
+
+    .open{
+        display: block;
+    }
+    .stop{
+        display: none;
+    }
+
+    .ant-select-item-option-selected{
+        font-weight: bold;
+    }
+
+    // 主体
+    .domain{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .nav{
+            margin: 15px;
+            div{
+                display: inline-block;
+                padding: 10px 15px;
+                border-radius: 5px;
+                overflow: hidden;
+                color: #000;;
+            }
+
+            div:active{
+                color: red;
+            }
+        }
+        
+        .wraaper{
+            margin: 10px;
+            width: 80%;
+            height: 300px;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            
+
+            .sidebar{
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #fff;
+                margin: 0px 10px;
+
+                div{
+                    display: inline-block;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    color: #000;
+                    margin-left: 40px;
+                }
+                    // background-color: #e7f1fd;
+                    
+            }
+
+            .site-box{
+                width: 100%;
+                height: 300px;
+                // border: 1px solid blue;
+                margin: 0px 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    width: 100%;
+                    margin: 10px 0px;
+                    color: blue;
+                    span{
+                        font-size: 20px;
+                    }
+                    i{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                
+            }
+        }
+        
     }
 }
