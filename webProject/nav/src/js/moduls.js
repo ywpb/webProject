@@ -2,6 +2,7 @@ import {categorys} from './category.js';
 import {nav,scate} from './nav.js';
 import {ajax} from './jsonData.js';
 import {mainList} from './main.js';
+import {Subject} from './ajax.js';
 
 new categorys({
     type : document.querySelector('.type'),
@@ -29,7 +30,7 @@ new scate({
     nav:document.querySelector('.nav'),
     json:data,
     listCate:document.querySelector('.sidebar'),
-    Mnav:document.querySelector('.site-box')
+    Mnav:document.querySelector('.site-box'),
 });
 
 new mainList({

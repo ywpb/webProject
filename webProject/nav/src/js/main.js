@@ -6,7 +6,7 @@ let mainList = function(data){
 mainList.prototype = {
     constructor:mainList,
     init(){
-        console.log(document.querySelector('#nSelect'))
+        // console.log(document.querySelector('#nSelect'))
     },
 }
 
